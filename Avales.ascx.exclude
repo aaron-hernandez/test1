@@ -1,0 +1,354 @@
+﻿<%@ Control Language="VB" AutoEventWireup="false" CodeFile="Avales.ascx.vb" Inherits="Avales" %>
+<link href="Estilos/HTML.css" rel="stylesheet" />
+<link href="Estilos/ObjHtmlNoS.css" rel="stylesheet" />
+<link href="Estilos/ObjHtmlS.css" rel="stylesheet" />
+
+<asp:Label ID="LblCat_Lo_Usuario" runat="server" Visible="false"></asp:Label>
+<table>
+    <tr class="Titulos">
+        <td colspan="2">Avales</td>
+    </tr>
+    <tr>
+        <td colspan="2">
+                        &nbsp;</td>
+    </tr>
+    <tr class="Arriba">
+        <td>
+            <table>
+                <tr class="Titulos"> 
+                    <td>
+                        Aval 1</td>
+                </tr>
+                <tr>
+                    <td>
+ 
+                        <table>
+                            <tr>
+                                <td>
+                        <asp:Label ID="LblPR_AV_AVALNOMBRE" runat="server" CssClass="LblDesc" Text="Nombre"></asp:Label>
+ 
+                                </td>
+                                <td colspan="4">
+                        <asp:TextBox ID="TxtPR_AV_AVALNOMBRE" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                        <asp:Label ID="LblPR_AV_AVALCALLE" runat="server" CssClass="LblDesc" Text="Calle"></asp:Label>
+ 
+                                </td>
+                                <td colspan="4">
+                        <asp:TextBox ID="TxtPR_AV_AVALCALLE" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                        <asp:Label ID="LblPR_AV_EXTAVAL" runat="server" CssClass="LblDesc" Text="# Exterior"></asp:Label>
+ 
+                                </td>
+                                <td>
+                        <asp:TextBox ID="TxtPR_AV_EXTAVAL" runat="server" CssClass="TxtDesNS" MaxLength="15" ReadOnly="True" Width="102px"></asp:TextBox>
+                                </td>
+                                <td colspan="2">
+                        <asp:Label ID="LblPR_AV_INTAVAL" runat="server" CssClass="LblDesc" Text="# Interior"></asp:Label>
+ 
+                                </td>
+                                <td>
+                        <asp:TextBox ID="TxtPR_AV_INTAVAL" runat="server" CssClass="TxtDesNS" MaxLength="15" ReadOnly="True" Width="77px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                        <asp:Label ID="LblPR_AV_AVALCOLONIA" runat="server" CssClass="LblDesc" Text="Colonia"></asp:Label>
+ 
+                                </td>
+                                <td colspan="4">
+                        <asp:TextBox ID="TxtPR_AV_AVALCOLONIA" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                        <asp:Label ID="LblPR_AV_AVALCIUDAD" runat="server" CssClass="LblDesc" Text="Ciudad"></asp:Label>
+ 
+                                </td>
+                                <td colspan="4">
+                        <asp:TextBox ID="TxtPR_AV_AVALCIUDAD" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                        <asp:Label ID="LblPR_AV_AVALESTADO" runat="server" CssClass="LblDesc" Text="Estado"></asp:Label>
+ 
+                                </td>
+                                <td colspan="2">
+                        <asp:TextBox ID="TxtPR_AV_AVALESTADO" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="176px"></asp:TextBox>
+                                </td>
+                                <td>
+                        <asp:Label ID="LblPR_AV_CPAVAL" runat="server" CssClass="LblDesc" Text="CP"></asp:Label>
+ 
+                                </td>
+                                <td>
+                        <asp:TextBox ID="TxtPR_AV_CPAVAL" runat="server" CssClass="TxtDesNS" MaxLength="15" ReadOnly="True" Width="78px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                        </table>
+ 
+                    </td>
+                </tr>
+                <tr class="Titulos">
+                    <td>
+                        Empresa Aval 1</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                        <asp:Label ID="LblPR_AV_AVALOC" runat="server" CssClass="LblDesc" Text="Nombre"></asp:Label>
+ 
+                                </td>
+                                <td colspan="4">
+                        <asp:TextBox ID="TxtPR_AV_AVALOC" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                        <asp:Label ID="LblPR_AV_AVALCALLEOC" runat="server" CssClass="LblDesc" Text="Calle"></asp:Label>
+ 
+                                </td>
+                                <td colspan="4">
+                        <asp:TextBox ID="TxtPR_AV_AVALCALLEOC" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                        <asp:Label ID="LblPR_AV_AVALEXTOC" runat="server" CssClass="LblDesc" Text="# Exterior"></asp:Label>
+ 
+                                </td>
+                                <td>
+                        <asp:TextBox ID="TxtPR_AV_AVALEXTOC" runat="server" CssClass="TxtDesNS" MaxLength="15" ReadOnly="True" Width="102px"></asp:TextBox>
+                                </td>
+                                <td colspan="2">
+                        <asp:Label ID="LblPR_AV_AVALINTOC" runat="server" CssClass="LblDesc" Text="# Interior"></asp:Label>
+ 
+                                </td>
+                                <td>
+                        <asp:TextBox ID="TxtPR_AV_AVALINTOC" runat="server" CssClass="TxtDesNS" MaxLength="15" ReadOnly="True" Width="77px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                        <asp:Label ID="LblPR_AV_AVALCOLONIAOC" runat="server" CssClass="LblDesc" Text="Colonia"></asp:Label>
+ 
+                                </td>
+                                <td colspan="4">
+                        <asp:TextBox ID="TxtPR_AV_AVALCOLONIAOC" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                        <asp:Label ID="LblPR_AV_AVALCIUDADOC" runat="server" CssClass="LblDesc" Text="Ciudad"></asp:Label>
+ 
+                                </td>
+                                <td colspan="4">
+                        <asp:TextBox ID="TxtPR_AV_AVALCIUDADOC" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                        <asp:Label ID="LblPR_AV_AVALESTADOOC" runat="server" CssClass="LblDesc" Text="Estado"></asp:Label>
+ 
+                                </td>
+                                <td colspan="2">
+                        <asp:TextBox ID="TxtPR_AV_AVALESTADOOC" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="176px"></asp:TextBox>
+                                </td>
+                                <td>
+                        <asp:Label ID="LblPR_AV_AVALCPOC" runat="server" CssClass="LblDesc" Text="CP"></asp:Label>
+ 
+                                </td>
+                                <td>
+                        <asp:TextBox ID="TxtPR_AV_AVALCPOC" runat="server" CssClass="TxtDesNS" MaxLength="15" ReadOnly="True" Width="74px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                        </table>
+                        </td>
+                </tr>
+                </table>
+        </td>
+        <td>
+            <table>
+                <tr class="Titulos">
+                    <td>Aval 2</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2NOMBRE" runat="server" CssClass="LblDesc" Text="Nombre"></asp:Label>
+                                </td>
+                                <td colspan="4">
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2NOMBRE" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2CALLE" runat="server" CssClass="LblDesc" Text="Calle"></asp:Label>
+                                </td>
+                                <td colspan="4">
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2CALLE" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2EXT" runat="server" CssClass="LblDesc" Text="# Exterior"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2EXT" runat="server" CssClass="TxtDesNS" MaxLength="15" ReadOnly="True" Width="102px"></asp:TextBox>
+                                </td>
+                                <td colspan="2">
+                                    <asp:Label ID="LblPR_AV_AVAL2INT" runat="server" CssClass="LblDesc" Text="# Interior"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2INT" runat="server" CssClass="TxtDesNS" MaxLength="15" ReadOnly="True" Width="77px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2COLONIA" runat="server" CssClass="LblDesc" Text="Colonia"></asp:Label>
+                                </td>
+                                <td colspan="4">
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2COLONIA" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2CIUDAD" runat="server" CssClass="LblDesc" Text="Ciudad"></asp:Label>
+                                </td>
+                                <td colspan="4">
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2CIUDAD" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2ESTADO" runat="server" CssClass="LblDesc" Text="Estado"></asp:Label>
+                                </td>
+                                <td colspan="2">
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2ESTADO" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="176px"></asp:TextBox>
+                                </td>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2CP" runat="server" CssClass="LblDesc" Text="CP"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2CP" runat="server" CssClass="TxtDesNS" MaxLength="15" ReadOnly="True" Width="78px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="Titulos">
+                    <td>
+                        Empresa Aval 2</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2OC" runat="server" CssClass="LblDesc" Text="Nombre"></asp:Label>
+                                </td>
+                                <td colspan="4">
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2OC" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2CALLEOC" runat="server" CssClass="LblDesc" Text="Calle"></asp:Label>
+                                </td>
+                                <td colspan="4">
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2CALLEOC" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2EXTOC" runat="server" CssClass="LblDesc" Text="# Exterior"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2EXTOC" runat="server" CssClass="TxtDesNS" MaxLength="15" ReadOnly="True" Width="102px"></asp:TextBox>
+                                </td>
+                                <td colspan="2">
+                                    <asp:Label ID="LblPR_AV_AVAL2INTOC" runat="server" CssClass="LblDesc" Text="# Interior"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2INTOC" runat="server" CssClass="TxtDesNS" MaxLength="15" ReadOnly="True" Width="77px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2COLONIAOC" runat="server" CssClass="LblDesc" Text="Colonia"></asp:Label>
+                                </td>
+                                <td colspan="4">
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2COLONIAOC" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2CIUDADOC" runat="server" CssClass="LblDesc" Text="Ciudad"></asp:Label>
+                                </td>
+                                <td colspan="4">
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2CIUDADOC" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="300px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2ESTADOOC" runat="server" CssClass="LblDesc" Text="Estado"></asp:Label>
+                                </td>
+                                <td colspan="2">
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2ESTADOOC" runat="server" CssClass="TxtDesNS" MaxLength="80" ReadOnly="True" Width="176px"></asp:TextBox>
+                                </td>
+                                <td>
+                                    <asp:Label ID="LblPR_AV_AVAL2CPOC" runat="server" CssClass="LblDesc" Text="CP"></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:TextBox ID="TxtPR_AV_AVAL2CPOC" runat="server" CssClass="TxtDesNS" MaxLength="15" ReadOnly="True" Width="74px"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td colspan="4">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                </table>
+        </td>
+    </tr>
+    </table>

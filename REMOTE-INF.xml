@@ -1,0 +1,3 @@
+<javascriptPackage>
+	<remoteBinding serverConnectionName="_CoreAPI_JSPackage" remoteConnectionName="_RemoteClient_JavascriptPackage" callKeyDelimiter="-"/>
+</javascriptPackage>
